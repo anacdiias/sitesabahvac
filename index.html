@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabahvac - HVAC Services</title>
+    <meta name="description" content="Professional heating, ventilation, and air conditioning services">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="Sabahvac Logo">
+                    </a>
+                </div>
+                
+                <nav class="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-cta">
+                    <a href="tel:+1234567890" class="btn btn-primary">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                </div>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-list">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <a href="tel:+1234567890" class="btn btn-primary mobile-cta">
+                    <i class="fas fa-phone"></i> Call Now
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background"></div>
+        <div class="container">
+            <div class="hero-content-grid">
+                
+                <div class="hero-form-container">
+                    <h3>Get Your Free Estimate</h3>
+                    <p>Fill out the form below and we'll contact you within 24 hours.</p>
+                    <form action="#" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" name="full-name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service-needed">Service Needed</label>
+                            <select id="service-needed" name="service-needed" required>
+                                <option value="" disabled selected>Select a service</option>
+                                <option value="ac-installation">AC Installation</option>
+                                <option value="ac-repair">AC Repair & Maintenance</option>
+                                <option value="heating">Heating Systems</option>
+                                <option value="ventilation">Ventilation Solutions</option>
+                                <option value="commercial">Commercial HVAC</option>
+                                <option value="emergency">Emergency Services</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message (Optional)</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Describe your needs"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-secondary btn-block">
+                            Request Free Estimate <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <div class="hero-text-content">
+                    <h1>Expert HVAC Solutions for Your Comfort</h1>
+                    <p>Professional heating, ventilation, and air conditioning services you can trust. Keep your space comfortable all year round.</p>
+                    <div class="hero-buttons">
+                        <a href="services.html" class="btn btn-secondary">Our Services</a>
+                        <a href="about.html" class="btn btn-primary">About Us</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p>We provide comprehensive HVAC solutions to meet all your heating, cooling, and ventilation needs.</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon blue">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <h3>AC Installation</h3>
+                    <p>Professional installation of energy-efficient air conditioning systems for optimal cooling performance.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon red">
+                        <i class="fas fa-wrench"></i>
+                    </div>
+                    <h3>AC Repair & Maintenance</h3>
+                    <p>Expert repair and regular maintenance services to keep your AC running efficiently and extend its lifespan.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon red">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Heating Systems</h3>
+                    <p>Installation, repair, and maintenance of heating systems to ensure your comfort during cold weather.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon blue">
+                        <i class="fas fa-wind"></i>
+                    </div>
+                    <h3>Ventilation Solutions</h3>
+                    <p>Improve indoor air quality with our professional ventilation services for residential and commercial spaces.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon blue">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Commercial HVAC</h3>
+                    <p>Specialized HVAC solutions for businesses, ensuring optimal climate control for your commercial property.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon red">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <h3>Emergency Services</h3>
+                    <p>24/7 emergency HVAC services to address urgent issues and restore your comfort as quickly as possible.</p>
+                </div>
+            </div>
+            
+            <div class="services-cta">
+                <a href="services.html" class="btn btn-primary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="section-title">About Sabahvac</h2>
+                    <p>Sabahvac is a leading provider of heating, ventilation, and air conditioning services, dedicated to ensuring your comfort in any season. With our team of experienced professionals, we deliver reliable and efficient HVAC solutions for both residential and commercial properties.</p>
+                    <p>Our commitment to quality service, technical expertise, and customer satisfaction has made us the trusted choice for HVAC needs across the region. We pride ourselves on using the latest technology and best practices to provide energy-efficient solutions that save you money while keeping you comfortable.</p>
+                    
+                    <div class="features-grid">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Licensed and certified HVAC technicians</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Over 15 years of industry experience</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Energy-efficient solutions</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Transparent pricing with no hidden fees</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Satisfaction guaranteed on all services</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>24/7 emergency service availability</span>
+                        </div>
+                    </div>
+                    
+                    <div class="about-cta">
+                        <a href="about.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="about-image-container">
+                    <div class="about-image">
+                        <img src="images/about-image.jpg" alt="HVAC Technician">
+                    </div>
+                    <div class="experience-badge">
+                        <span class="years">15+</span>
+                        <span class="text">Years of Experience in HVAC Industry</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section-padding">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p>Don't just take our word for it. Here's what our satisfied customers have to say about our services.</p>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonials-wrapper">
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Sabahvac provided exceptional service when installing our new AC system. The technicians were professional, knowledgeable, and completed the job ahead of schedule. Our home has never been more comfortable!"</p>
+                        <div class="testimonial-author">
+                            <h4>John Smith</h4>
+                            <p>Miami, FL</p>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"I've been using Sabahvac for all my HVAC needs for the past 3 years. Their maintenance service is top-notch, and their team is always responsive and helpful. Highly recommend!"</p>
+                        <div class="testimonial-author">
+                            <h4>Sarah Johnson</h4>
+                            <p>Orlando, FL</p>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"When my AC broke down during the hottest week of summer, Sabahvac came to the rescue. They responded quickly, diagnosed the issue accurately, and had my system up and running the same day. Great service!"</p>
+                        <div class="testimonial-author">
+                            <h4>Michael Brown</h4>
+                            <p>Tampa, FL</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="testimonials-cta">
+                <a href="testimonials.html" class="btn btn-primary">View More Testimonials</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="accent-text">GET IN TOUCH</span>
+                <h2 class="section-title">Contact Us</h2>
+                <p>Have questions or ready to schedule service? Contact us today for a free estimate.</p>
+            </div>
+            
+            <div class="contact-grid">
+                <!-- Form Card -->
+                <div class="contact-form-card">
+                    <h3>Get a Free Estimate</h3>
+                    <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                    
+                    <form id="contactForm" action="#" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number *</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(123) 456-7890" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Service Needed</label>
+                                <select id="service" name="service" required>
+                                    <option value="">Select a service</option>
+                                    <option value="installation">AC Installation</option>
+                                    <option value="maintenance">AC Repair & Maintenance</option>
+                                    <option value="heating">Heating Systems</option>
+                                    <option value="ventilation">Ventilation Solutions</option>
+                                    <option value="commercial">Commercial HVAC</option>
+                                    <option value="emergency">Emergency Services</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your needs..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            Submit Request <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Contact Info Card -->
+                <div class="contact-info-card">
+                    <h3>Contact Information</h3>
+                    
+                    <ul class="contact-info-list">
+                        <li>
+                            <div class="icon-wrapper">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-content">
+                                <span>Phone</span>
+                                <a href="tel:+1234567890">(123) 456-7890</a>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div class="icon-wrapper">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <span>Email</span>
+                                <a href="mailto:ayrton.saba@gmail.com">ayrton.saba@gmail.com</a>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div class="icon-wrapper">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <span>Address</span>
+                                <p>123 HVAC Street, Cooling City, AC 12345</p>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <div class="icon-wrapper">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <span>Business Hours</span>
+                                <p>Monday - Friday: 8:00 AM - 6:00 PM<br>
+                                Saturday: 9:00 AM - 4:00 PM<br>
+                                Sunday: Closed</p>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <div class="emergency-service">
+                        <h3>Emergency Service</h3>
+                        <p>HVAC emergencies don't wait for business hours. Our emergency service is available 24/7.</p>
+                        <a href="tel:+1234567890" class="btn btn-emergency">
+                            <i class="fas fa-phone"></i> Call for Emergency Service
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Column 1: Logo and Description -->
+                <div class="footer-about">
+                    <img src="images/logo.png" alt="Sabahvac Logo" class="footer-logo">
+                    <p>Professional heating, ventilation, and air conditioning services for residential and commercial properties.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Column 2: Quick Links -->
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3: Services -->
+                <div class="footer-services">
+                    <h3>Our Services</h3>
+                    <ul>
+                        <li><a href="services.html">AC Installation</a></li>
+                        <li><a href="services.html">AC Repair & Maintenance</a></li>
+                        <li><a href="services.html">Heating Systems</a></li>
+                        <li><a href="services.html">Ventilation Solutions</a></li>
+                        <li><a href="services.html">Commercial HVAC</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Column 4: Contact -->
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+1234567890">(123) 456-7890</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:ayrton.saba@gmail.com">ayrton.saba@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 HVAC Street, Cooling City, FL 12345</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <p>Mon-Fri: 8:00 AM - 6:00 PM</p>
+                                <p>Sat: 9:00 AM - 4:00 PM</p>
+                                <p>Sun: Closed</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year">2023</span> Sabahvac. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

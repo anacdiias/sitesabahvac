@@ -1,0 +1,87 @@
+/* SABAHVAC Responsive Styles */
+
+/* Mobile First Approach */
+
+/* Small Devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+  .header-content {
+    flex-wrap: wrap;
+  }
+  
+  .contact-hero h1 {
+    font-size: 2.25rem;
+  }
+
+  /* Style for background text */
+  .background-text-overlay {
+    font-size: 8rem; /* Adjusted size for small devices */
+    line-height: 1;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Medium Devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .contact-hero h1 {
+    font-size: 3rem;
+  }
+  
+  /* Style for background text */
+  .background-text-overlay {
+    font-size: 12rem; /* Adjusted size for medium devices */
+    line-height: 1;
+  }
+}
+
+/* Large Devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  
+  .contact-hero h1 {
+    font-size: 3.5rem;
+  }
+
+  /* Style for background text */
+  .background-text-overlay {
+     /* Using clamp for fluid font size: min, preferred, max */
+    font-size: clamp(12rem, 20vw, 18rem);
+    line-height: 1;
+  }
+}
+
+/* Extra Large Devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  /* Let the clamp function handle sizing */
+}
+
+/* Fix for the mobile menu */
+@media (max-width: 767.98px) {
+  #mobile-menu.hidden {
+    display: none;
+  }
+  
+  #mobile-menu {
+    /* This rule seems incorrect, it should likely remain hidden by default */
+    /* display: block; Remove this if menu should start hidden */
+  }
+}
+
+/* Adjust background text further on very small screens */
+@media (max-width: 480px) {
+  .background-text-overlay {
+    font-size: 6rem; /* Smaller size for very small screens */
+    opacity: 0.3; /* Adjust opacity if needed */
+  }
+} 
